@@ -136,11 +136,16 @@
     
     header img {
       display: block;
-      max-width: 100%;
+      max-width: 100px;
       height: auto;
       margin: 0 auto;
     }
-    
+    @media (max-width: 600px) {
+      header img {
+        max-width: 80%;
+        height: auto;
+      }
+}
 
 
     .serviço {
