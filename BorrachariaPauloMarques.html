@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borracharia Paulo Marques</title>
+  <style>
+    :root {
+      --cor-branca: #ffffffe0;
+      --cor-vermelha: #ff1e1e;
+      --cor-preta: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--cor-preta);
+      color: var(--cor-preta);
+      line-height: 1.6;
+      
+    }
+
+    header {
+      background-color: var(--cor-branca);
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      padding: 0px;
+      margin: 20px 200px;
+      border-radius: 20px;
+    }
+
+    nav {
+    margin-top: 10px;
+    text-align: center;
+    }
+
+    nav a {
+    display:block;
+    width: fit-content;
+    color: var(--cor-preta);
+    background-color: var(--cor-branca);
+    margin: 5px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2 ease-in-out;
+    text-align: center;
+    border-radius: 8px;
+    }
+    nav a:hover {
+      color: var(--cor-branca);
+      background-color: var(--cor-vermelha);
+      transform: scale(1.05);
+    }
+    .imagem-lateral {
+      position: absolute;
+      top: 400px; /* Ajusta conforme onde começa sua div.container */
+      width: 350px;
+      height: 750px;
+      z-index: 0;
+    }
+    .imagem-lateral {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .imagem-lateral:hover {
+      transform: scale(1.2);
+    }
+
+
+    .imagem-lateral.esquerda {
+      left: calc(38% - 770px); /* 50% da tela - metade da .container - distância da imagem */
+    }
+
+    .imagem-lateral.direita {
+      right: calc(38% - 770px);
+    }
+
+    .container {
+      padding: 50px;
+      max-width: 1400px;
+      margin: 30px auto;
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid var(--cor-vermelha);
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      color: var(--cor-vermelha);
+      margin-top: 20px;
+    }
+    h3 {
+      color: var(--cor-vermelha);
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: var(--cor-preta);
+      color: var(--cor-branca);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .imagem-lateral {
+        display: none;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        
+      }
+    }
+    
+    header img {
+      width: 500px;
+      height: 300px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .serviço {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 50px;
+      max-width: 1400px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.815);
+      border-radius: 20px;
+    }
+    .servico section {
+      flex: 1;           /* Cada section ocupa metade do espaço */
+    }
+
+    #img1 {
+      width: 800px;
+      height: 400px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+    #img2 {
+      width: 600px;
+      height: 300px;
+    }
+    #img3 {
+      
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      width: 900%;
+      max-width: 600px; /* ou o tamanho que quiser */
+    }
+    #img4 {
+      width: 500px;
+      margin: 30px;
+    }
+
+  </style>
+</head>
+<body>
+    <body>
+  <header>
+    <img src="borracharia_logo_sem_fundo.png" alt="">
+  </header>
+
+  <nav>
+      <a href="https://wa.me/5511947672099" target="_blank">💬 WhatsApp - +55 11 94767-2099</a>
+      <a href="https://g.co/kgs/pwN3Pzb" target="_blank">📍 Endereço - (Av. Nove de Julho, 700 - Bela Vista)</a>
+  </nav>
+  <!-- Imagens laterais da div container -->
+  <img src="baneresquerdo.png" class="imagem-lateral esquerda" alt="Banner esquerdo">
+  <img src="banerdireito.png" class="imagem-lateral direita" alt="Banner direito">
+
+  <div class="container">
+    <section>
+      <h2>Bem-vindo à Borracharia Paulo Marques!</h2>
+      <p>Seu pneu furou? Relaxa, a gente resolve! Aqui é serviço rápido, no capricho e com aquele atendimento raiz que você respeita.
+        Se você está procurando por uma borracharia de confiança, com atendimento rápido e especializado em <strong>troca de pneus</strong>, você está no lugar certo. A Borracharia Paulo Marques atende veículos de passeio, utilitários e motos, sempre com agilidade, qualidade e preço justo.
+      </p>
+      <!-- Imagem 1 -->
+      <img src="primeira imagem de boas vindas 6.6.25.png" id="img1" alt="Troca de pneu rápida">
+  </div>
+    
+
+  <div class="container">
+      <h2>Troca de pneus na hora, com serviço profissional</h2>
+      <p>Oferecemos <strong>troca de pneus furados</strong>, <strong>remendo a quente e a frio</strong>, <strong>conserto de câmara de ar</strong>, e muito mais. Nosso serviço é rápido e eficiente, ideal pra quem precisa seguir viagem sem perder tempo. Também realizamos <strong>balanceamento de rodas</strong> e <strong>alinhamento</strong>, garantindo total segurança e estabilidade pro seu veículo.</p>
+
+      <!-- Imagem 2 -->
+      <img src="balanceameto.png" id="img2" alt="Serviço especializado">
+    
+
+    
+      <h2>Equipe experiente e atendimento de qualidade</h2>
+      <p>Nossos profissionais têm anos de experiência no ramo. Trabalhamos com <strong>equipamentos modernos</strong> e <strong>ferramentas específicas para pneus de aro 13 a 20</strong>. Aqui, você encontra um serviço honesto, com explicações claras e atendimento humanizado.</p>
+
+      <!-- Imagem 4 -->
+      <img src="alinhamento.png" id="img3" alt="Equipe da borracharia">
+    
+
+    
+      <h2>Preços justos e honestos</h2>
+      <p>A gente sabe que imprevisto com pneu já é um estresse. Por isso, aqui você tem <strong>orçamento sem compromisso</strong>, <strong>formas de pagamento facilitadas</strong>, e total transparência no serviço prestado. Sem pegadinhas, sem enrolação</p>
+
+    </section>
+  </div>
+
+  <div class="serviço">
+    <section >
+      <h3>Serviços oferecidos:</h3>
+        <ul>
+            <li><strong>Remendo de pneu</strong> </li>
+            <li><strong>Troca de pneu furado</strong></li>
+            <li><strong>Balanceamento e alinhamento</strong></li>
+            <li><strong>Calibragem de pneus</strong></li>
+            <li><strong>Atendimento a domicílio</strong></li>
+            <li><strong>Remendo a quente e a frio</strong></li>
+        </ul>
+    </section>
+    <section >
+      <h3>Atendemos:</h3>
+        <ul>
+            <li><strong>Carros</strong></li>
+            <li><strong>Utilitários</strong></li>
+            <li><strong>Motos</strong></li>
+            <li><strong>Carros de passeio</strong></li>
+            <li><strong>Clientes da região e viajantes</strong></li>
+        </ul>
+    </section>
+    <section>
+      <h3>Nossa estrutura:</h3>
+        <ul>
+          <li><strong>Compressor de ar de alta pressão</strong></li>
+          <li><strong>Máquina de desmontar pneu</strong></li>
+          <li><strong>Elevador hidráulico</strong></li>
+          <li><strong>Balanceadora eletrônica</strong></li>
+          <li><strong>Calibrador digital de pneus</strong></li>
+          <li><strong>Ferramentas específicas para cada tipo de aro</strong></li>
+        </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Borracharia Paulo Marques — Seu pneu em boas mãos</p>
+    <p><a href="https://wa.me/5511947672099" target="_blank" style="color: var(--cor-vermelha);">WhatsApp - +55 11 94767-2099</a> |
+       <a href="https://g.co/kgs/d2cbZ9T" target="_blank" style="color: var(--cor-vermelha);">Av. Nove de Julho, 700 - Bela Vista, São Paulo</a>
+    </p>
+  </footer>
+</body>
+
+</body>
+</html>
